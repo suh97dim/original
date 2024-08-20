@@ -1,0 +1,112 @@
+.btn
+    text-align: center
+    font-size: 18px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    // padding: 25px 30px
+    border-radius: 10px
+
+    color: $black
+    // min-width: 320px
+    display: block
+    &:disabled
+        border: 1px solid $red
+        opacity: 0.5
+
+.btn-sm
+    padding: 15px 20px
+    display: flex
+    align-items: center
+    justify-content: center
+.button-mob
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $red
+    border: none
+    img
+        width: 24px
+        height: 24px
+.collapsed
+    color: $orange
+.btn-lg
+    min-width: 320px
+    padding: 25px 30px
+    display: flex
+    align-items: center
+    justify-content: center
+.btn-red-fill
+    background-color: $red
+    color: $white
+    &:hover
+        background-color: #FF2D24
+        border: 1px solid #FF2D24
+        color: $white
+    &:active
+        background-color: #F7A29C!important
+        border: 1px solid #F7A29C!important
+        color: $white!important
+   
+
+
+.btn-red-border
+    border: 1px solid $red
+    &:hover
+        background-color: $red
+        color: $white
+.btn-red-border  
+    &:hover path
+        fill: $white
+       
+.btn-red-border-bottom
+    border-bottom: 1px solid $red
+    border-radius: 0
+    padding-left: 0
+    padding-right: 0
+    &:hover
+        border-bottom: 1px solid $black
+        color: $red
+    &:hover path
+        fill: $red
+.check-code-btn
+    min-width: 210px
+.btn-dropdown
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    background-color: transparent
+    border: none
+.btn-dropdown.show
+    color: $orange
+
+.dropdown-toggle
+    &::after
+        border: none
+        background-image: url(../img/icons/qa-open.svg)
+        transform: rotate(45deg)
+        width: 8px
+        height: 8px
+        border-style: solid
+        margin-left: 10px
+        border-width: 0 1px 1px 0
+@media screen and (max-width: 992px)
+    .btn-lg
+        font-size: 16px
+        padding: 20px 30px
+
+@media screen and (max-width: 768px)
+    .btn-lg
+
+        font-size: 16px
+        padding: 18px 30px
+@media screen and (max-width: 576px)
+    .btn-lg
+        font-size: 16px
+        padding: 18px 30px
+        // width: 100% 
+        min-width: auto

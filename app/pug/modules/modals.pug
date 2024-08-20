@@ -1,0 +1,20 @@
+.modal#modal-call
+      .modal-dialog.modal-dialog-centered
+            .modal-content
+                  .modal-body
+                        button(type="button" data-bs-dismiss="modal" aria-label="Close").close
+                              +img('icons/close.svg', 'close-ic')
+                        .modal-title Заказать обратный звонок
+                        p.text-center.fs-medium Отправьте нам свой номер телефона и мы Вам перезвоним!
+                        form.row.needs-validation(novalidate).w-50.mx-a.mt-24
+                              .col-12.mb-24
+                                    input( type="email" placeholder="E-mail" required ).form-control
+                                    .invalid-feedback Введите e-mail
+                              .col-12.mb-24
+                                    input(type="password" placeholder="Пароль" required ).form-control
+                                    .invalid-feedback Введите пароль
+                              .col-12
+                                    button.btn.btn-lg.btn-red-fill.w-100(type="submit") Отправить
+
+
+

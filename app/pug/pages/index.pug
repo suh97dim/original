@@ -1,0 +1,102 @@
+extends /layout/page
+
+block title
+    title Система защиты подлинности
+
+block variables
+    - var page = 'index'
+block content
+    .container-fluid.overflow-hidden.p-0
+        .row.no-gutters
+            .col-sm-12
+                .swiper.swiper-documents
+                    .swiper-wrapper
+                        .swiper-slide 
+                            .slide-item
+                                .title Маркируйте продукцию для обеспечения её подлинности
+                                +img('slide1.jpg','',' img-fluid ','')
+                                button(type="submit").btn.btn-lg.btn-red-fill.mt-20.mt-lg-40.mx-a Узнать подробнее
+                        .swiper-slide 
+                            .slide-item
+                                .title Маркируйте продукцию для обеспечения её подлинности
+                                +img('marketing4.jpg','',' img-fluid ','')
+                                button(type="submit").btn.btn-lg.btn-red-fill.mt-20.mt-lg-40.mx-a Узнать подробнее
+                        .swiper-slide 
+                            .slide-item
+                                .title Маркируйте продукцию для обеспечения её подлинности
+                                +img('slide1.jpg','',' img-fluid ','')
+                                button(type="submit").btn.btn-lg.btn-red-fill.mt-20.mt-lg-40.mx-a Узнать подробнее
+                    .swiper-pagination
+
+
+    .container.mt-60.mt-md-80.mt-lg-120    
+        .row 
+            .col 
+                h2 Проверить подлинность товара
+                ul.nav.mt-40
+                    li.nav-item
+                        a(href='#tab-1' data-bs-toggle="tab").nav-link.active По цифровому/буквенному коду
+                    li.nav-item
+                        a(href='#tab-2' data-bs-toggle="tab").nav-link По QR-коду
+        .row.mt-40
+            .tab-content 
+                #tab-1.tab-pane.fade.active.show
+                    .row.d-flex.align-items-center
+                        .col-lg-7
+                            h3 Введите код со стикера
+                            p.fs-medium.mt-16 Проверить подлинность товара на нашем сайте прямо сейчас
+                            form.row.form-group.needs-validation(novalidate).mt-40 
+                                .col-sm-7.position-relative
+                                    input(type="text" class="form-control" class="input" placeholder="_ _ _ - _ _ _ - _ _ _ - _ _ _" required).mask-code
+                                .col-sm-5
+                                    button(type="submit").btn.btn-lg.btn-red-fill.check-code-btn.mt-24.mt-sm-0  Проверить
+
+                        .col-lg-5.position-relative.mt-30.mt-lg-0
+                            +img('box.png','',' img-fluid authenticity-img ','')
+
+                #tab-2.tab-pane.fade
+                    .row.d-flex.align-items-center
+                        .col-md-7
+                            h3.mb-20.mb-lg-40 Чтобы проверить подлинность, <br class="touch-br-del">скачайте бесплатное <br class="touch-br-del"> приложение Original!
+                            a(href="" target="_blank")
+                                +img('icons/app-button.svg','','  sticker ','')
+
+                        .col-md-5.position-relative.mt-30.mt-lg-0
+                            +img('qr.jpg','',' img-fluid authenticity-img  ','')
+    .container-fluid.p-0.mt-60.mt-md-80.mt-lg-100
+        .row.no-gutters
+            .col 
+                .marquee(style="overflow:hidden")
+                    .marquee-wrap
+                        +img('/main-page-partners/1.jpg','','marquee-img') 
+                        +img('/main-page-partners/2.jpg','','marquee-img') 
+                        +img('/main-page-partners/3.jpg','','marquee-img') 
+                        +img('/main-page-partners/4.jpg','','marquee-img') 
+                        +img('/main-page-partners/5.jpg','','marquee-img') 
+                        +img('/main-page-partners/6.jpg','','marquee-img') 
+                        +img('/main-page-partners/7.jpg','','marquee-img') 
+                        +img('/main-page-partners/8.jpg','','marquee-img') 
+                        +img('/main-page-partners/1.jpg','','marquee-img') 
+                        +img('/main-page-partners/2.jpg','','marquee-img') 
+                        +img('/main-page-partners/3.jpg','','marquee-img') 
+                        +img('/main-page-partners/4.jpg','','marquee-img') 
+                        +img('/main-page-partners/5.jpg','','marquee-img') 
+                        +img('/main-page-partners/6.jpg','','marquee-img') 
+                        +img('/main-page-partners/7.jpg','','marquee-img') 
+                        +img('/main-page-partners/8.jpg','','marquee-img') 
+                .marquee(style="overflow:hidden").mt-30.mt-md-70
+                    .marquee-wrap
+                        +img('/main-page-partners/9.jpg','','marquee-img') 
+                        +img('/main-page-partners/10.jpg','','marquee-img') 
+                        +img('/main-page-partners/11.jpg','','marquee-img') 
+                        +img('/main-page-partners/12.jpg','','marquee-img') 
+                        +img('/main-page-partners/13.jpg','','marquee-img') 
+                        +img('/main-page-partners/14.jpg','','marquee-img') 
+                        +img('/main-page-partners/15.jpg','','marquee-img') 
+                        +img('/main-page-partners/9.jpg','','marquee-img') 
+                        +img('/main-page-partners/10.jpg','','marquee-img') 
+                        +img('/main-page-partners/11.jpg','','marquee-img') 
+                        +img('/main-page-partners/12.jpg','','marquee-img') 
+                        +img('/main-page-partners/13.jpg','','marquee-img') 
+                        +img('/main-page-partners/14.jpg','','marquee-img') 
+                        +img('/main-page-partners/15.jpg','','marquee-img') 

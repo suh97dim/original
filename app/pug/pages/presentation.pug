@@ -1,0 +1,23 @@
+extends /layout/page
+
+block title
+    title Презентации
+
+block variables
+    - var page = 'presentation'
+block content
+    .container
+        .row.mt-20.mt-md-60
+            .col-12
+                h1.text-center.h1-lg Презентации
+        .row.mt-30.mt-lg-60
+            .col-md-6.presentation.flex-column
+                +img('pres1.jpg','',' img-fluid ','')
+                a(href="/pres-1").presentation.mt-24
+                    +img('icons/pdf.svg','','mr-16','') 
+                    <span>QR-коды с электронной цифровой подписью<span>
+            .col-md-6.presentation.flex-column.mt-40.mt-md-0
+                +img('pres2.jpg','',' img-fluid  ','')
+                a(href="/pres-2").fs-large.presentation.mt-24
+                    +img('icons/pdf.svg','','mr-16','') 
+                    <span>QR-коды с электронной цифровой подписью<span>

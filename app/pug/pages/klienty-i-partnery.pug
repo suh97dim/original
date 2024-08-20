@@ -1,0 +1,28 @@
+extends /layout/page
+
+block title
+    title Партнеры
+
+block variables
+    - var page = 'partners'
+block content
+    .container
+        .row
+            .col 
+                h1.text-center.c-red Наши клиенты
+                h2.c-black.text-center.mt-16 Клиенты и партнеры
+        .row.mt-40.mt-lg-80
+            .col-12 
+                h3.text-center Автодетали 
+            .col-6.col-md-4.col-lg-3
+                .clients
+                    +img('/clients/kamaz.png','','mt-16 mt-md-30 mx-a','')
+                p.fs-medium.mt-10.mt-lg-20 КАМАЗ — крупнейший производитель тяжелых грузовых автомобилей в России 
+            .col-6.col-md-4.col-lg-3
+                .clients
+                    +img('/clients/oat.jpg','','mt-16 mt-md-30 mx-a','')
+                p.fs-medium.mt-10.mt-lg-20 КАМАЗ — крупнейший производитель тяжелых грузовых автомобилей в России
+            
+        .row 
+            .col 
+                button(type="submit").btn.btn-lg.btn-red-border.mt-20.mt-lg-40.mx-a Показать больше
